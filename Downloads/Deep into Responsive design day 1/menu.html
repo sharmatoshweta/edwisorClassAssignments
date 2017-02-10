@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+   
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   
+<style> 
+  html,body,main{
+    padding: 0;
+    margin: 0;
+    height: 100%;
+    width: 100%;
+  }
+
+ 
+
+  nav{
+    padding-top: 3%;
+    width: 200px;
+    height: 100%;    
+    background-color: #00162D;
+    position: absolute;
+    transform : translate(-200px,0);
+    transition : transform 0.3 ease;
+
+  }
+
+  .navOpen {
+
+    transform : translate(0,0) !important;
+    transition : transform 0.3 ease;
+  }
+
+  nav a{
+    display: block;
+    color: white;
+    font-size: 1.4em;
+    padding: 5px;
+  }
+
+  nav a:hover {
+    display: block;
+    background-color: #004084;
+    cursor: pointer;
+  }
+
+  @media screen and (min-width: 500px){
+    nav {
+      display: block;
+      position: relative;
+      transform : translate(0,0);
+    }
+
+    body{
+      display: flex;
+      flex-flow:row nowrap;
+    }
+
+    main{
+      width: auto;
+      flex-grow :1;
+    }
+  }
+
+</style>
+</head>
+<body>
+
+<nav id="mobile">
+  
+    <a>Home</a>
+    <a>About Me</a>
+    <a>Contact Me</a>
+    <a id="closeMenu">Close Menu</a>
+</nav>
+
+<main>
+   <button id="myMenu" style="min-width:150px;min-height:50px;">Menu Toggle</button>
+    <p>
+
+       MEAN Stack developers are expected to have exceptional coding skills in Javascript on both Frontend and Backend. 
+    </p>
+  
+</main>
+
+<script type="text/javascript">
+  document.getElementById("myMenu").addEventListener('click',function(){
+    var d = document.getElementById("mobile");
+    d.className += " navOpen";
+
+  });
+
+  document.getElementById("closeMenu").addEventListener('click',function(){
+    var d = document.getElementById("mobile");
+    d.className -= " navOpen";
+  })
+
+</script>
+
+
+</body>
+</html>

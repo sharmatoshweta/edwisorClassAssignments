@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+   
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   
+<style> 
+.my-container {
+    display: -webkit-flex;
+    display: flex;
+   /* to tell that elements should wrap themselves to next line*/
+    flex-wrap :wrap;     
+    width:  100%;
+    background-color: #D8D8D8;
+}
+
+.container-item {
+    width: 150px;
+    height: 150px;
+    align-self: center;
+}
+.blue {
+  order:1;
+  background-color: #0081EA;
+
+}
+.red {
+  order:3;
+  background-color: #EA000B; 
+}
+.green {
+  order:2;
+  background-color: #068400;
+}
+
+</style>
+</head>
+<body>
+
+<div class="my-container">
+
+  <div id="blueBox" class="container-item blue myFont"><a>Blue Box</a></div>
+  <div id="redBox" class="container-item red myFont"><a>Red Box</a></div>
+  <div id="greenBox"class="container-item green myFont"><a>Green Box</a></div> 
+
+</div>
+
+<script src="https://code.jquery.com/jquery-3.1.0.min.js" ></script>
+
+<script type="text/javascript">
+  // first of all, we wait for the document to load to perform our functions 
+  // There is no point in playing with elements unless we are sure that they have been loaded. 
+  $( document ).ready(function() {
+
+    $("#blueBox").text("I am a blueBox");
+
+    $("a").click(function(){
+        var classes = $(this).parent().attr("class");
+        alert("my classes are - "+classes);
+
+    });//end a click
+
+      
+  });
+
+
+</script>
+</body>
+</html>

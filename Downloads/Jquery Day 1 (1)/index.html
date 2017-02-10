@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+   
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <style type="text/css">
+
+      body{
+        padding: 3%;
+      }
+
+      h1 {
+        font-size: 4vmax;
+      }
+      h2 {
+        font-size: 3vmax;
+      }
+      p {
+        font-size: 2vmax;
+      }
+
+   </style>
+
+</head>
+<body>
+
+<div class="my-container">
+  <h1>Aditya Kumar</h1>
+  <h2>A startup enthusiast, a technophile , a soccer player and fan 
+  and just the guy who can end all your technology related woes!</h2>
+
+  <p>I'm just glad that you want to know about me. but seriously, why? 
+    Anyways,<a id="expandButton">Click to know more about me</a>
+
+  </p><!-- end of visible paragraph -->
+
+  <p class="hidden">
+    I am die hard soccer fan and a soccer player. That's the only thing i love more than computer and technology. I am also a startup enthusiast and love to help startups. Infact, i do it every weekend as a habit.<br/> I like writing. I used to write a lot during my college time, but for last 2 years, all i have been writing is "Code"! I have finally decided to pick up my "Internet pen" and start writing again and hence this blog.(yes, yes, i have gotten a little rusty).<br/>Professionaly, i am the co-founder and chief technology officer of a really cool startup. As you may have done the math already, i designed the whole frontend and backend of company's product myself and now i have passed the baton to group of really talented developers.(Busy life justified! sigh..) <br>
+    In Technology, i am extremely interested in Distributed Systems, Cloud, Scaling in Cloud. I have recently started learning Neo4j which is a very cool graph database with infinite applications in days to come. I am also working on AMQP, InterPlanetary File System(IPFS) and WebRTC and conducting some research of my own. So, if you are looking for - a friend who can help you with those little technical doubts, a mentor for your interns and employees, a technical consultant who associates himself with the concept and people, an expert to scale up your technology architecture or a guy who is a football chatterbox, well you better call this saul.
+  </p> <!-- end of hidden paragraph -->
+   
+
+</div>
+
+
+<script type="text/javascript" src="jquery.min.js"></script>
+
+<script type="text/javascript">
+
+  // main document ready function to check if dom is loaded fully or not
+  $( document ).ready(function() {
+    // this is element level selection. You are modifying something related to a particular element of html 
+    $("p").css("color","red");
+
+
+    // this is selection using class
+    $(".hidden").css("visibility","hidden");
+
+    // this is selecion using id 
+    $("#expandButton").css({"color":"blue","text-decoration":"underline","cursor":"pointer"});
+
+    // this is 
+
+    $("#expandButton").click(function(){
+        $(".hidden").css({"visibility":"visible","color":"green"});
+
+    })// end expand button
+
+
+  });
+
+
+
+</script>
+
+</body>
+
+
+</html>

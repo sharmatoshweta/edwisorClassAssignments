@@ -1,0 +1,76 @@
+@media screen and (min-width: 768px){
+	.myFont {
+      
+      font-size: 56px;
+      color: white;
+      
+    }
+
+	.blue {      
+		width: 50%;
+    }
+    .red {
+      width: 50%;
+    }
+    .green {
+
+    	width: 50%;
+      
+    }
+    .purple {
+     	width: 50%;
+    }
+}
+
+@media screen and (min-width: 480px ) and (max-width: 767px){
+
+    .myFont {
+      
+      font-size: 40px;
+      color: blue;
+      
+    }
+
+	.blue {      
+
+		width: 50%;
+
+    }
+    .red {
+
+      width: 50%;
+    }
+    .green {
+
+    	width: 100%;
+      
+    }
+    .purple {
+     	width: 100%;
+    }
+
+
+}
+@media screen and (max-width: 480px){
+
+	.myFont {
+      
+      font-size: 30px;
+      color: red;
+      
+    }
+
+	.blue {      
+		width: 100%;
+    }
+    .red {
+      width: 100%;
+    }
+    .green {
+    	width: 100%;
+      
+    }
+    .purple {
+     	width: 100%;
+    }
+}

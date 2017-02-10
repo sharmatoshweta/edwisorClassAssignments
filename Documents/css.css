@@ -1,0 +1,31 @@
+body{
+	font-family: 'Lato','Helvetica Neue', Helvetica, Arial, sans-serif;
+	overflow-x: hidden;
+	border:1px solid black;
+}
+p{
+	font-size:20px;
+}
+p.small{
+	font-size:16px;
+}
+a,
+a:hover,
+a:focus,
+a:active,{
+	color:#18BC9C;
+	outline:none;
+	text-decoration: none;
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6{
+	font-family: 'Montserrat','Neue', Helvetica, Arial, sans-serif;
+	font-weight: 700;
+}
+header{
+	text-align:center;
+}
